@@ -13,9 +13,9 @@ Deep Learning: ML-modellen die hierarchisch zijn opgebouwd. Bestaan uit heel vee
 
 Rosenblatt's perceptron: Classificatie model dat twee klassen die gescheiden kunnen worden door een rechte lijn perfect kan leren classificeren.
 
-$ŷ = sgn ( \sum_{i} w_i \cdot x_i )$
-$w = w - (ŷ - y)\cdot x$
-$b = b - (ŷ - y)
+$ŷ = sgn ( \sum_{i} w_i \cdot x_i )$<br>
+$w = w - (ŷ - y)\cdot x$<br>
+$b = b - (ŷ - y)$
 
 
 | $x_1$ | $x_2$ | $y$ |
