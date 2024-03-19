@@ -2,11 +2,11 @@ name: adv-datamining
 channels:
   - conda-forge
 dependencies:
-  - jupyter=Hoofdstuk1.0
+  - jupyter=1.0
   - matplotlib=3.8
-  - notebook=7.Hoofdstuk1
+  - notebook=7.1
   - pandas=2.2
   - pip=24.0
   - python=3.11
-  - scikit-learn=Hoofdstuk1.4
+  - scikit-learn=1.4
   - tensorflow=2.15
