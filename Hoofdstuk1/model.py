@@ -17,7 +17,7 @@ class Perceptron:
         """
         Returns a list of predicted class label.
         :param xs: List of instances
-        :return:
+        :return: List of predictions
         """
         yhats = []
         # Get individual instance
