@@ -19,7 +19,7 @@ class Perceptron:
         :param xs: List of instances
         :return:
         """
-        yhats = list()
+        yhats = []
         # Get individual instance
         for x in xs:
             # Pre-activation
@@ -40,6 +40,7 @@ class Perceptron:
         :param xs: List of instances
         :param ys: List of labels
         """
+        # Go through the instances
         for x, y in zip(xs, ys):
             yhat = self.predict([x])[0]
 
@@ -48,7 +49,7 @@ class Perceptron:
                 self.bias = self.bias - error
                 self.weights = [wi - error * xi for wi, xi in zip(self.weights, x)]
 
-    def fit(self, xs, ys, epochs=0):
+    def fit(self, xs: list, ys: list, epochs=0):
         """
         Executes fitting until the model is not updating anymore
         :param xs: List of instances
@@ -96,6 +97,7 @@ class LinearRegression:
         return yhats
 
     def partial_fit(self, xs: list, ys: list, alpha=0.01):
+        # Go through the instances
         for x, y in zip(xs, ys):
             yhat = self.predict([x])[0]
 
@@ -104,7 +106,7 @@ class LinearRegression:
                 self.bias = self.bias - alpha * error
                 self.weights = [wi - alpha * error * xi for wi, xi in zip(self.weights, x)]
 
-    def fit(self, xs, ys, alpha=0.01, epochs=500):
+    def fit(self, xs: list, ys: list, alpha: float = 0.01, epochs: int = 500):
         eps = 0
         updating = True
         while updating:
