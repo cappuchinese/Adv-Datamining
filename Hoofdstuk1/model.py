@@ -74,6 +74,7 @@ class Perceptron:
             # When max epochs is reached
             elif eps == epochs:
                 print("Max number of epochs reached")
+                updating = False
 
 
 class LinearRegression:
@@ -124,4 +125,5 @@ class LinearRegression:
                 updating = False
             elif eps == epochs:
                 print("Max number of epochs reached")
+                updating = False
 
